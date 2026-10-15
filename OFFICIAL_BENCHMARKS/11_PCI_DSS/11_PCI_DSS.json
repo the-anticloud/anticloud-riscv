@@ -1,0 +1,16 @@
+{
+ "framework": "11_PCI_DSS",
+ "title": "PCI-DSS v4.0",
+ "project": "RISCV",
+ "basis": [
+  {
+   "check": "13_pci_dss",
+   "status": "PASS",
+   "observed": "{\"authority\": \"PCI SSC\", \"control_ids\": [\"1.1.1\", \"1.2.1\", \""
+  }
+ ],
+ "verdict": "CONTROLS EVIDENCED \u2014 all basis checks PASS",
+ "pax_provenance": "Run ID loiskleinner/pax-benchmark-runner v3, 2026-10-02, Kaggle T4 x2 (2x 16GB VRAM), Ubuntu 22.04, Python 3.12. These are PAX L5 Narrow L2 General 27B model-level results \u2014 shared model component, not this project's verdict.",
+ "bench_sha3": "added4e2e6b240b5c743803e4318c2c585596493abcb6610052782b00f7f74e7",
+ "register_sha3": "0d7b63ff2e01c40a6097e4a269bf02caad7adaeb5051f7d104ef54c7285d266d"
+}
