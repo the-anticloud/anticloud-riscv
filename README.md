@@ -4,7 +4,7 @@
 
 **Category:** SEMICONDUCTOR · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/ultraembedded/riscv · **Pinned commit:** `7ae6f803e30f78c6ea3121e73c3adf50ff912730` · **Vendor:** Anticloud FZ LLE
 
-## What This Project Is
+## What This Project Does
 
 Github: [http://github.com/ultraembedded/riscv](http://github.com/ultraembedded/riscv)
 
@@ -25,7 +25,7 @@ The top (top_tcm_axi/src_v/riscv_tcm_top.v) contains;
 * AXI4-Lite master port for CPU access to peripherals.
 * Separate reset for CPU core to dual ported RAM / AXI interface (to allow program code to be loaded prior to CPU reset de-assertion).
 
-## Anticloud Overlay
+## API
 
 The 12 improvements live under `anticloud/`. Run the check suite from this directory:
 
@@ -33,7 +33,7 @@ The 12 improvements live under `anticloud/`. Run the check suite from this direc
 python anticloud/bench/runner.py --cwd anticloud
 ```
 
-## Benchmark Results
+## Benchmarks
 
 | Result | Status | Evidence |
 | --- | --- | --- |
@@ -56,11 +56,11 @@ python anticloud/bench/runner.py --cwd anticloud
 
 **Suite: 16/16 passed** · platform `win32` · python `3.12.10` · method `{'aggregate_rule': 'all_passed == AND over benchmarks[*].ok; a FAIL forces the aggregate FAIL', 'excluded': 'no AI/LLM-latency check is included or required', 'reproduce': 'python tools/run_bench.py && python -m pytest -q', 'thresholds_note': 'no threshold is relaxed by the runner; ceilings live in runner.py and are asserted independently in tests/test_project_metadata.py'}`
 
-## Licence
+## License
 
 The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The Anticloud overlay is licensed under Anticommons 0.1.0 (`ANTICOMMONS_LICENSE.md`).
 
-## Verification
+## Upstream
 
 SHA3-256 of `BENCH.json`:
 
@@ -69,3 +69,18 @@ b90eca47ac8105cbbc26743b2127e2bcbc34cd02b48b23540e71fbfdc32600b9
 ```
 
 Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.
+
+
+## Dependencies
+
+See project documentation for details.
+
+
+## Configuration
+
+See project documentation for details.
+
+
+## Contributing
+
+See project documentation for details.
